@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/**====[ HEADER ]====**/
+header {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+#header-h1 {
+}
+
+#header-menu > ul {
+  list-style: none;
+}
+
+/**====[ MAIN ]====**/
+main {
+  background-color: blue;
+  height: 90vh;
+}
+
+/**====[ FOOTER ]====**/
+footer {
+  background-color: red;
+  height: 10vh;
+}
