@@ -1,90 +1,39 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
+
 body {
-  width: 100vh;
+  background: rgb(190, 88, 105);
+  background: -moz-linear-gradient(
+    top,
+    rgb(190, 88, 105) 0%,
+    rgb(11, 98, 168) 76%,
+    rgb(76, 69, 73) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgb(190, 88, 105) 0%,
+    rgb(11, 98, 168) 76%,
+    rgb(76, 69, 73) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgb(190, 88, 105) 0%,
+    rgb(11, 98, 168) 76%,
+    rgb(76, 69, 73) 100%
+  );
+  width: 100vw;
   height: 100vh;
 }
 
-/** LINKS **/
-
-.main-manu-header {
-  background: #403a3e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #be5869,
-    #403a3e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #be5869, #403a3e);
-
-  width: 100vw;
-  height: 60vh;
-  font-size: 2rem;
+header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main-manu-header > h1 {
-  border-bottom: 1rem solid black;
+  height: 50%;
 }
 
-/** LINKS **/
-
-.main-menu-links {
-  padding-top: 1rem;
-  /* background-color: blue; */
-  width: 100vw;
-  height: 18vh;
-}
-
-.main-menu-links > ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-.main-menu-links > ul > li {
-  display: inline;
-  font-size: 4rem;
-  border: 0.75rem solid black;
-  border-radius: 2rem;
-  padding: 1rem;
-}
-
-.main-menu-links > ul > li > i {
-  margin-right: 1rem;
-}
-a {
-  color: black;
-}
-
-a:hover {
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to right, red, black);
-  color: transparent;
-
-  background-size: 300%;
-  background-position: -100%;
-  animation: animation-link 1s infinite alternate-reverse;
-}
-
-@keyframes animation-link {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 100%;
-  }
-}
-
-.animation-div {
-  /* background-color: green; */
-  width: 100vw;
-  height: 20vh;
-}
-
-#animation-cubes {
-  height: 1vh;
-  width: 1vw;
-  color: rgb(57, 128, 3);
+#header-text {
+  font-size: 10rem;
 }
