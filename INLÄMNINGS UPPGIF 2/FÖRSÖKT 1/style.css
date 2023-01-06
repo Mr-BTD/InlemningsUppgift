@@ -26,7 +26,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+/** =========== HEADER =========== **/
 header {
   display: flex;
   justify-content: center;
@@ -35,6 +35,72 @@ header {
 }
 
 #header-text {
-  font-size: 10rem;
+  font-size: 4rem;
   font-family: "Work Sans", sans-serif;
+}
+/** =========== MAIN =========== **/
+main {
+  height: 30%;
+  padding-top: 10%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  display: inline;
+}
+
+/*^ = = = = = = LINKS = = = = = = ^*/
+a {
+  color: black;
+  font-size: 3em;
+  padding-right: 10px;
+}
+
+a:hover {
+  background-image: linear-gradient(to right, black, red, black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-color: white;
+
+  background-size: 300%;
+  background-position: -100%;
+  animation: animationTEXT 1s infinite alternate-reverse;
+}
+
+i {
+  margin-left: 10px;
+}
+
+.link-boreder {
+  background-color: white;
+  border: solid 1rem black;
+  border-radius: 25px;
+}
+
+/*~ =========== ANIMATIONS =========== ~*/
+
+@keyframes animationTEXT {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+/*? =========== MEDIA QUERIES =========== ?*/
+@media screen and (max-width: 600px) {
+  body {
+    background: green;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: yellow;
+  }
 }
