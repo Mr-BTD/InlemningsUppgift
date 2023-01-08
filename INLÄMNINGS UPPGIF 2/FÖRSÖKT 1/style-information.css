@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  height: 5rem;
+  display: flex;
+}
+
+#info-header-menu {
+  width: 10vw;
+  background-color: yellow;
+}
+
+header > div > ul > li {
+  display: inline;
+  background-color: yellow;
+  font-size: 3rem;
+}
+header > div > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
