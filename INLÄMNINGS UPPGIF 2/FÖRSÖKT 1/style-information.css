@@ -2,27 +2,35 @@
   margin: 0;
   padding: 0;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
 
 header {
-  height: 5rem;
+  background-color: black;
+  height: 10vh;
   display: flex;
 }
 
-#info-header-menu {
-  width: 10vw;
+#header-menu {
+  width: 40vw;
+  height: inherit;
+  background-color: blue;
+}
+
+#header-animation {
+  width: 100%;
   background-color: yellow;
+}
+header > div > ul {
+  display: flex;
+  height: inherit;
+  width: inherit;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 header > div > ul > li {
   display: inline;
-  background-color: yellow;
-  font-size: 3rem;
 }
-header > div > ul {
-  display: flex;
-  justify-content: space-evenly;
+
+.fa-solid {
+  font-size: 3em;
 }
